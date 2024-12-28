@@ -13,6 +13,7 @@ lib = library('cxxtelebot',
 		include_directories: inc_dirs,
 		cpp_args: lib_compile_args,
 		install: true,
+        dependencies: [lib_deps]
 		)
 
 lib_dep = declare_dependency(
